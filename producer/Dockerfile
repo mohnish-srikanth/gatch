@@ -2,5 +2,5 @@ FROM python:3.10-slim
 WORKDIR /app
 RUN pip install requests kafka-python
 COPY producer.py .
-# CMD ["python", "producer.py"]
-CMD ["tail", "-f", "/dev/null"]
+CMD ["python", "producer.py"]
+# CMD ["tail", "-f", "/dev/null"]
